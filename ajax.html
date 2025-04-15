@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX API Feladat</title>
+  <link rel="stylesheet" href="ajax.css">
+</head>
+<body>
+  <h1>AJAX CRUD – Webprogramozás</h1>
+
+  <section id="create-update">
+    <h2>Új rekord / Frissítés</h2>
+    <label>Név: <input type="text" id="name"></label>
+    <label>Magasság (cm): <input type="text" id="height"></label>
+    <label>Súly (kg): <input type="text" id="weight"></label>
+    <label for="update-id">ID frissítéshez:</label>
+<select id="update-id">
+  <option value="">-- válassz ID-t --</option>
+</select>
+<button onclick="getDataForId()">Get Data for ID</button>
+    <button onclick="createData()">Create</button>
+    <button onclick="getDataForId()">Get Data for ID</button>
+    <button onclick="updateData()">Update</button>
+  </section>
+
+  <section id="delete">
+    <h2>Törlés</h2>
+    <label>ID: <input type="text" id="delete-id"></label>
+    <button onclick="deleteData()">Delete</button>
+  </section>
+
+  <section id="list">
+    <h2>Rekordjaim</h2>
+    <button onclick="readData()">Update</button>
+    <div id="output"></div>
+  </section>
+
+  <script src="ajax.js"></script>
+</body>
+</html>

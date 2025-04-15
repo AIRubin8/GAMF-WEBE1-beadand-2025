@@ -1,0 +1,12 @@
+table {
+    margin-bottom: 20px;
+    border-collapse: collapse;
+  }
+  td, th {
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+  }
+  tr:hover {
+    background-color: rgb(255, 255, 255);
+  }

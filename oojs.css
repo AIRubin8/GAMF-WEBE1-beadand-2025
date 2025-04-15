@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 2rem;
+  }
+  
+  button {
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #e0e0e0;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #d1cfcf;
+  }
+  
+  #pet-info h2 {
+    margin-bottom: 1rem;
+  }
+  .stat {
+    text-align: left;
+    margin: 10px auto;
+    width: 60%;
+  }
+  
+  .label {
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  
+  .bar-container {
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  .bar-button {
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    transition: width 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .hunger {
+    background-color: #f44336;
+  }
+  
+  .happiness {
+    background-color: #ffeb3b;
+  }
+  
+  .energy {
+    background-color: #4caf50;
+  }
+  #pet-image {
+    width: 200px;
+    height: 200px;
+    transition: transform 1s ease, opacity 0.5s ease;
+  }
+  
+  #pet-image.happy {
+    transform: scale(1.1); /* Boldog állapotban nagyobb */
+  }
+  
+  #pet-image.sad {
+    transform: scale(0.9); /* Szorongó állapotban kisebb */
+  }
+  
+  #pet-image.dead {
+    opacity: 0.3; /* Halott állapotban fakóbb */
+  }

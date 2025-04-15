@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Tamagochi Klón</title>
+  <link rel="stylesheet" href="oojs.css">
+</head>
+<body>
+  <h1>🐣 Tamagochi Klón – OOJS</h1>
+
+  <div id="pet-info">
+    <!-- Kép itt -->
+    <img id="pet-image" src="happy.png" alt="Tama" />
+    <h2 id="pet-name">Tama</h2>
+    <!-- A statok megjelenítése -->
+    <div class="visuals">
+      <div class="stat hunger">Éhség: <span id="hunger-value">100</span></div>
+      <div class="stat happiness">Boldogság: <span id="happiness-value">100</span></div>
+      <div class="stat energy">Energia: <span id="energy-value">100</span></div>
+    </div>
+  </div>
+
+  <button onclick="tama.feed()">🍽️ Etetés</button>
+  <button onclick="tama.play()">🎮 Játék</button>
+  <button onclick="tama.sleep()">💤 Alvás</button>
+
+  <script src="oojs.js"></script>
+</body>
+</html>

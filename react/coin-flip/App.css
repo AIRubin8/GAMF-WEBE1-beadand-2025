@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+button {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background-color: gold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f8d64e;
+}
+
+.results {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.coin {
+  height: 150px;
+  margin: 1rem auto;
+}
+
+.coin-img {
+  height: 100%;
+  width: auto;
+  transition: transform 1s ease-in-out;
+}
+
+.coin.flip .coin-img {
+  transform: rotateY(1080deg);
+}
